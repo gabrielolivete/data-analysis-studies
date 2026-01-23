@@ -242,3 +242,28 @@ SELECT * FROM subjects WHERE subject_workload > 40;
 -- Query 4: Retrieve grades between 6 and 8
 -- --------------------------------------------
 SELECT * FROM grades WHERE grade_value > 6 AND grade_value < 8;
+
+-- --------------------------------------------
+-- Query 5: Calculate the average grade per subject
+-- --------------------------------------------
+SELECT
+	s.subject_name,
+    AVG(g.grade_value) AS average_grade
+FROM grades g 
+JOIN subjects s 
+	ON g.subject_id = s.subject_id 
+GROUP BY s.subject_name 
+ORDER BY average_grade DESC;
+
+-- --------------------------------------------
+-- Query 6: Identify students with grades above the overall average
+-- --------------------------------------------
+SELECT
+	g.student_id,
+    g.grade_value
+FROM grades g 
+WHERE g.grade_value > (
+  SELECT AVG(grade_value)
+  FROM grades
+  )
+ORDER BY g.grade_value DESC;
