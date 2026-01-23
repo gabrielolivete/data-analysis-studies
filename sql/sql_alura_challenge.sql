@@ -14,7 +14,7 @@ CREATE TABLE students (
   student_name VARCHAR (100),
   student_birth_date DATE,
   student_gender VARCHAR (50),
-  atudent_adress VARCHAR (150),
+  student_adress VARCHAR (150),
   student_contact VARCHAR (20),
   student_email VARCHAR (50)
   );
@@ -123,7 +123,7 @@ INSERT INTO 'teachers' ('teacher_id','teacher_name','teacher_birth_date','teache
  ('3','Mariana Santos','1982-03-15','Female','(11) 3456-7890','mariana@email.com'), 
  ('4','Ricardo Silva','1978-08-20','Male','(11) 7890-1234','ricardo@email.com'), 
  ('5','Fernanda Lima','1985-01-30','Female','(11) 4567-8901','fernanda@email.com');
-SELECT * FROM professorestabela;
+SELECT * FROM teachers;
 
 INSERT INTO 'subjects' ('subject_id','subject_name','subject_description','subject_workload','teacher_id') VALUES 
  ('1','Mathematics','Advanced mathematical concepts','60','1'), 
@@ -215,6 +215,7 @@ INSERT INTO 'grades' ('grade_id','student_id','subject_id','grade_value','evalua
 (47,8,4,8.09,'08/15/2023'),
 (48,8,5,8.24,'08/15/2023'),
 (49,8,6,3.33,'08/15/2023');
+SELECT * FROM grades;
 
 -- ============================================
 -- DATA ANALYSIS QUERIES
@@ -222,10 +223,10 @@ INSERT INTO 'grades' ('grade_id','student_id','subject_id','grade_value','evalua
 -- This section contains SQL queries used to
 -- explore and analyze the data.
 
-SELECT * FROM notastabela;
+SELECT * FROM grades;
 
-SELECT * FROM alunostabela ORDER BY nome_aluno;
+SELECT * FROM students ORDER BY student_name;
 
-SELECT * FROM disciplinastabela WHERE carga_horaria_disciplina > 40;
+SELECT * FROM subjects WHERE subject_workload > 40;
 
-SELECT * FROM notastabela WHERE valor_nota > 6 AND valor_nota < 8;
+SELECT * FROM grades WHERE grade_value > 6 AND grade_value < 8;
