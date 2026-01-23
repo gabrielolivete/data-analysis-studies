@@ -215,7 +215,6 @@ INSERT INTO 'grades' ('grade_id','student_id','subject_id','grade_value','evalua
 (47,8,4,8.09,'08/15/2023'),
 (48,8,5,8.24,'08/15/2023'),
 (49,8,6,3.33,'08/15/2023');
-SELECT * FROM grades;
 
 -- ============================================
 -- DATA ANALYSIS QUERIES
@@ -223,10 +222,23 @@ SELECT * FROM grades;
 -- This section contains SQL queries used to
 -- explore and analyze the data.
 
+
+-- --------------------------------------------
+-- Query 1: Retrieve all grades recorded
+-- --------------------------------------------
 SELECT * FROM grades;
 
+-- --------------------------------------------
+-- Query 2: List students ordered alphabetically
+-- --------------------------------------------
 SELECT * FROM students ORDER BY student_name;
 
+-- --------------------------------------------
+-- Query 3: Identify subjects with workload above 40 hours
+-- --------------------------------------------
 SELECT * FROM subjects WHERE subject_workload > 40;
 
+-- --------------------------------------------
+-- Query 4: Retrieve grades between 6 and 8
+-- --------------------------------------------
 SELECT * FROM grades WHERE grade_value > 6 AND grade_value < 8;
