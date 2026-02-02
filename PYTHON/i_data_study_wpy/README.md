@@ -30,5 +30,8 @@ seaborn
 
 This folder contains screenshots of studies in data science with python.
 
-### Average grade per subject
+### Dashboard top
 ![Main Dashboard](images/main_dashboard.png)
+
+### Filters
+![Filters](images/filters.png)
