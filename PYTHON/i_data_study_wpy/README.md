@@ -23,3 +23,10 @@ pandas
 numpy
 matplotlib
 seaborn
+
+This folder contains screenshots of studies in data science with python.
+
+## 📊 Python Analysis
+
+### Average grade per subject
+![Main Dashboard](images/main_dashboard.png)
