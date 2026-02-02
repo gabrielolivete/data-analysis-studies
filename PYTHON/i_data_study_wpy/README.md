@@ -26,7 +26,7 @@ seaborn
 
 
 
-## 📊 Python Analysis
+📊 Python Analysis
 
 This folder contains screenshots of studies in data science with python.
 
