@@ -35,3 +35,7 @@ This folder contains screenshots of studies in data science with python.
 
 ### Filters
 ![Filters](images/filters.png)
+
+### Charts
+![Charts](images/graphs1.png)
+![Charts](images/graphs2.png)
