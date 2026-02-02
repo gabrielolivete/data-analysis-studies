@@ -1,5 +1,7 @@
 📊 Data Analysis Studies (Python)
 
+https://data-analysis-studies-ess5whguxk6usomitnajt6.streamlit.app/
+
 A collection of Python data analysis experiments and utilities to support learning, experimentation, and practical application of data manipulation and visualization techniques.
 
 📌 About
